@@ -11,7 +11,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendorConstructor_Constructor()
     {
-      Vendor newVendor = new Vendor("TEST");
+      Vendor newVendor = new Vendor("test");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
 
@@ -19,9 +19,8 @@ namespace PierresBakery.Tests
     public void GetVendorInformation_ReturnsDescription_String()
     {
       //Arrange
-      string VendorName = "marge";
-      string VendorDescription = "wigDealer";
-      Vendor newVendor = new Vendor(VendorName, VendorDescription);
+      string VendorName = "test";
+      Vendor newVendor = new Vendor(VendorName);
       
       //Act
       string result = newVendor.VendorName;

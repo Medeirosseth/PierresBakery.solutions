@@ -11,9 +11,10 @@ namespace PierresBakery.Models
 
     private static List<Vendor> _instances = new List<Vendor> {};
 
-    public Vendor(string test)
+    public Vendor(string vendorName)
     {
-
+      VendorName = vendorName;
+  
     }
   }
 }
