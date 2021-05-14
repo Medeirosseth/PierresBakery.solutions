@@ -12,6 +12,10 @@ namespace PierresBakery.Tests
     public void VendorConstructor_CreatesInstanceOfVendorConstructor_Constructor()
     {
       
+      Vendor newVendor = new Vendor("TEST");
+      Assert.AreEqual(typeof(Vendor), newVendor);
+
+      
     }
   }
 }
