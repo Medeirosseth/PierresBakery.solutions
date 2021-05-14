@@ -37,5 +37,23 @@ namespace PierresBakery.Tests
       Assert.AreEqual(orderTitle, result);
     }
 
+    [TestMethod]
+
+    public void GetId_ReturnsOrderId_int()
+    {
+      //Arrange
+      string orderTitle = "order testerer";
+      string orderDescription = "CHECK";
+      int orderPrice = 0;
+      int orderDate = 0;
+      Order newOrder = new Order(orderTitle, orderDescription, orderPrice, orderDate);
+
+      //Act
+      int result = newOrder.Id;
+
+      //Assert
+      Assert.AreEqual(1, result);
+    }
+
   }
 }
