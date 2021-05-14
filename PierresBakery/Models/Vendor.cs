@@ -1,9 +1,9 @@
-using System.Collections.Generic;
-
 namespace PierresBakery.Models
 {
-  public class Vendor
+  public class Item
   {
+
+    // properties, methods, etc. will go here.
 
   }
 }
