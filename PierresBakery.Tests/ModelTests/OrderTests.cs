@@ -55,5 +55,27 @@ namespace PierresBakery.Tests
       Assert.AreEqual(1, result);
     }
 
+    [TestMethod]
+    public void GetAll_ReturnsAllOrderObjects_OrderList()
+    {
+      //Arrange
+      string orderTitle1 = "order testerer";
+      string orderDescription1 = "CHECK";
+      int orderPrice1 = 0;
+      int orderDate1 = 0;
+      string orderTitle2 = "order testerer";
+      string orderDescription2 = "CHECK";
+      int orderPrice2 = 0;
+      int orderDate2 = 0;
+      Order newOrder1 = new Order(orderTitle1, orderDescription1, orderPrice1, orderDate1);
+      Order newOrder2 = new Order(orderTitle2, orderDescription2, orderPrice2, orderDate2);
+      List<Order> newOrder = new List<Order> { newOrder1, newOrder2};
+      //Act
+      List<Order> result = Order.GetAll();
+
+      //Assert
+      Assert.AreEqual(newOrder, result);
+    }
+
   }
 }
