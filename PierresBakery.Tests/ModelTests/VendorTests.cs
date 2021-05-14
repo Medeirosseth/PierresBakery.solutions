@@ -6,12 +6,16 @@ using PierresBakery.Models;
 namespace PierresBakery.Tests
 {
   [TestClass]
-  public class VendorTests
+  public class VendorTests : IDisposable
   {
+    public void Dispose()
+    {
+      Vendor.ClearAll();
+    }
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendorConstructor_Constructor()
     {
-      Vendor newVendor = new Vendor("test");
+      Vendor newVendor = new Vendor("test", "test");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
 
@@ -20,7 +24,8 @@ namespace PierresBakery.Tests
     {
       //Arrange
       string VendorName = "test";
-      Vendor newVendor = new Vendor(VendorName);
+      string VendorDescription = "test";
+      Vendor newVendor = new Vendor(VendorName, VendorDescription);
       
       //Act
       string result = newVendor.VendorName;
@@ -28,6 +33,20 @@ namespace PierresBakery.Tests
       //Assert
       Assert.AreEqual(VendorName, result);
 
+    }
+
+    [TestMethod]
+
+    public void GetAll_ReturnsEmptyList_VendorList()
+    {
+      //Arrange
+      List<Vendor> newVendor = new List<Vendor>{ };
+
+      //Act
+      List<Vendor> result = Vendor.GetAll();
+
+      //Assert
+      CollectionAssert.AreEqual(newVendor, result);
     }
   }
 }
