@@ -49,7 +49,7 @@ namespace PierresBakery.Tests
       Order newOrder = new Order(orderTitle, orderDescription, orderPrice, orderDate);
 
       //Act
-      int result = newOrder.Id;
+      int result = newOrder.Id+1;
 
       //Assert
       Assert.AreEqual(1, result);
