@@ -16,6 +16,7 @@ namespace PierresBakery.Models
       VendorName = vendorName;
       VendorDescription = vendorDescription;
       _instances.Add(this);
+      Id = _instances.Count;
     }
 
     public static List<Vendor> GetAll()

@@ -41,14 +41,17 @@ namespace PierresBakery.Tests
     {
       //Arrange
       List<Vendor> newVendor = new List<Vendor>{ };
-
+  
       //Act
       List<Vendor> result = Vendor.GetAll();
-
+    foreach (Vendor thisVendor in result)
+      {
+        Console.WriteLine("Output from empty list GettAll test: " + thisVendor.VendorName);
+      }
       //Assert
       CollectionAssert.AreEqual(newVendor, result);
     }
-
+    
     [TestMethod]
 
     public void GetAll_ReturnsVendors_VendorList()
@@ -67,6 +70,22 @@ namespace PierresBakery.Tests
 
       //Assert
       CollectionAssert.AreEqual(newVendorList, result);
+    }
+
+    [TestMethod]
+
+    public void GetId_VendorInstantiatesWithAnIsAndGetterReturns_Int()
+    {
+      //Arrange
+      string vendorName = "test";
+      string vendorDescription = "test";
+      Vendor newVendor = new Vendor(vendorName, vendorDescription);
+
+      //Act
+      int result = 0;
+
+      //Assert
+      Assert.AreEqual(1, result);
     }
   }
 }
