@@ -1,0 +1,8 @@
+/Users/seth/Desktop/PierresBakery.Solutions/obj/Debug/net5.0/PierresBakery.csprojAssemblyReference.cache
+/Users/seth/Desktop/PierresBakery.Solutions/obj/Debug/net5.0/PierresBakery.GeneratedMSBuildEditorConfig.editorconfig
+/Users/seth/Desktop/PierresBakery.Solutions/obj/Debug/net5.0/PierresBakery.AssemblyInfoInputs.cache
+/Users/seth/Desktop/PierresBakery.Solutions/obj/Debug/net5.0/PierresBakery.AssemblyInfo.cs
+/Users/seth/Desktop/PierresBakery.Solutions/obj/Debug/net5.0/PierresBakery.csproj.CoreCompileInputs.cache
+/Users/seth/Desktop/PierresBakery.Solutions/obj/Debug/net5.0/PierresBakery.MvcApplicationPartsAssemblyInfo.cache
+/Users/seth/Desktop/PierresBakery.Solutions/obj/Debug/net5.0/PierresBakery.RazorAssemblyInfo.cache
+/Users/seth/Desktop/PierresBakery.Solutions/obj/Debug/net5.0/PierresBakery.RazorAssemblyInfo.cs

@@ -1,0 +1,11 @@
+A Splash Page is used 
+::CHECK::vedor and Order classes 
+::CHECK:: project uses two or more controllers 
+Models are tested
+Get and Post Requests/responses are used successfully
+MVC follows RESTful conventions
+indentation/variable names/ readme
+
+HOMEPAGE @ ["/"]
+HOMEPAGE --> option between going to vendor page or Order page
+VENDER PAGE --> LINKS to a form to fill out for new vendor 
