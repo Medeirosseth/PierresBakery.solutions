@@ -13,9 +13,19 @@ namespace PierresBakery
     public int Id { get; }
     
 
-    public Order(string orderTitle)
+    public Order(string orderTitle, string orderDescription, int orderPrice, int orderDate)
     {
+      OrderTitle = orderTitle;
+      OrderDescription = orderDescription;
+      OrderPrice = orderPrice;
+      Orderdate = orderDate;
+      Id = _instances.Count;
 
+    }
+
+    public static void ClearAll()
+    {
+      _instances.Clear();
     }
   }
 
