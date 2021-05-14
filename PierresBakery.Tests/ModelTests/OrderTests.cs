@@ -69,12 +69,12 @@ namespace PierresBakery.Tests
       int orderDate2 = 0;
       Order newOrder1 = new Order(orderTitle1, orderDescription1, orderPrice1, orderDate1);
       Order newOrder2 = new Order(orderTitle2, orderDescription2, orderPrice2, orderDate2);
-      List<Order> newOrder = new List<Order> { newOrder1, newOrder2};
+      List<Order> Orders = new List<Order> { newOrder1, newOrder2};
       //Act
       List<Order> result = Order.GetAll();
 
       //Assert
-      Assert.AreEqual(newOrder, result);
+      CollectionAssert.AreEqual(Orders, result);
     }
 
   }

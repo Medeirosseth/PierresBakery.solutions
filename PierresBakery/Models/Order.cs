@@ -27,6 +27,11 @@ namespace PierresBakery
     {
       _instances.Clear();
     }
+
+    public static List<Order> GetAll()
+    {
+      return _instances;
+    }
   }
 
   
