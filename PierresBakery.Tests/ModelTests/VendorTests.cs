@@ -82,7 +82,7 @@ namespace PierresBakery.Tests
       Vendor newVendor = new Vendor(vendorName, vendorDescription);
 
       //Act
-      int result = 0;
+      int result = newVendor.Id;
 
       //Assert
       Assert.AreEqual(1, result);
