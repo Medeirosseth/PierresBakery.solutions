@@ -11,6 +11,13 @@ namespace PierresBakery
     public int OrderPrice { get; set; }
     public int Orderdate { get; set; }
     public int Id { get; }
-    public List<Item> Items { get; set; }
+    
+
+    public Order(string orderTitle)
+    {
+
+    }
   }
+
+  
 }
