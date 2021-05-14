@@ -13,7 +13,8 @@ namespace PierresBakery.Tests
     {
       
       Vendor newVendor = new Vendor("TEST");
-      Assert.AreEqual(typeof(Vendor), newVendor);
+      Assert.AreEqual(typeof(Vendor), newVendor.GetType());
+      
 
       
     }
