@@ -49,33 +49,57 @@ namespace PierresBakery.Tests
       Order newOrder = new Order(orderTitle, orderDescription, orderPrice, orderDate);
 
       //Act
-      int result = newOrder.Id+1;
+      int result = newOrder.Id;
 
       //Assert
       Assert.AreEqual(1, result);
     }
+        [TestMethod]
+        public void Find_ReturnsCorrectOrder_Order()
+        {
+          //Arrange
+          string orderTitle = "order testerer";
+          string orderDescription = "CHECK";
+          int orderPrice = 0;
+          int orderDate = 0;
+          string orderTitle1 = "order testerer";
+          string orderDescription1 = "CHECK";
+          int orderPrice1 = 0;
+          int orderDate1 = 0;
+          Order newOrder = new Order(orderTitle, orderDescription, orderPrice, orderDate);
+          Order newOrder1 = new Order(orderTitle1, orderDescription1, orderPrice1, orderDate1);
+          List<Order> ListOfOrders = new List<Order> {newOrder, newOrder1};
 
-    [TestMethod]
-    public void GetAll_ReturnsAllOrderObjects_OrderList()
-    {
-      //Arrange
-      string orderTitle1 = "order testerer";
-      string orderDescription1 = "CHECK";
-      int orderPrice1 = 0;
-      int orderDate1 = 0;
-      string orderTitle2 = "order testerer";
-      string orderDescription2 = "CHECK";
-      int orderPrice2 = 0;
-      int orderDate2 = 0;
-      Order newOrder1 = new Order(orderTitle1, orderDescription1, orderPrice1, orderDate1);
-      Order newOrder2 = new Order(orderTitle2, orderDescription2, orderPrice2, orderDate2);
-      List<Order> Orders = new List<Order> { newOrder1, newOrder2};
-      //Act
-      List<Order> result = Order.GetAll();
+          //Act
+          Order result = Order.Find(2);
 
-      //Assert
-      CollectionAssert.AreEqual(Orders, result);
-    }
+          //Assert
+          Assert.AreEqual(newOrder1, result);
+        }
+
+    // [TestMethod]
+    // public void GetAll_ReturnsAllOrderObjects_OrderList()
+    // {
+    //   //Arrange
+    //   // string orderTitle = "order testerer";
+    //   // string orderDescription = "CHECK";
+    //   // int orderPrice = 0;
+    //   // int orderDate = 0;
+    //   // string orderTitle1 = "order testerer";
+    //   // string orderDescription1 = "CHECK";
+    //   // int orderPrice1 = 0;
+    //   // int orderDate1 = 0;
+    //   // Order newOrder = new Order(orderTitle, orderDescription, orderPrice, orderDate);
+    //   // Order newOrder1 = new Order(orderTitle1, orderDescription1, orderPrice1, orderDate1);
+    //   // List<Order> ListOfOrders = new List<Order> {newOrder, newOrder1};
+
+    //   // //Act
+    //   // List<Order> result = Order.GetAll();
+      
+    //   // //Assert
+    //   // CollectionAssert.AreEquivalent(ListOfOrders, result);
+      
+    // }
 
   }
 }

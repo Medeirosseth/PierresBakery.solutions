@@ -19,6 +19,7 @@ namespace PierresBakery
       OrderDescription = orderDescription;
       OrderPrice = orderPrice;
       Orderdate = orderDate;
+      _instances.Add(this);
       Id = _instances.Count;
 
     }
@@ -32,6 +33,8 @@ namespace PierresBakery
     {
       return _instances;
     }
+
+
   }
 
   
