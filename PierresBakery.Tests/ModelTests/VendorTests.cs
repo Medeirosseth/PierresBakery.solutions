@@ -107,5 +107,28 @@ namespace PierresBakery.Tests
       Assert.AreEqual(newVendor1, result);
 
     }
+
+    [TestMethod]
+    public void GetOrder_MatchOrderWithVendor_OrderList()
+    {
+      //Arrange
+      string vendorName = "test";
+      string vendorDescription ="test";
+      string orderType = "test order";
+      string orderDescription = "test order description";
+      int orderPrice = 0;
+      int orderDate = 0;
+      Order newOrder = new Order (orderType, orderDescription, orderPrice, orderDate);
+      List<Order> newList = new List<Order> { newOrder };
+      Vendor newVendor = new Vendor(vendorName, vendorDescription);
+      newVendor.GetOrder(newOrder);
+
+      //Act
+      List<Order> result = newVendor.Orders;
+
+      //Assert
+      CollectionAssert.AreEqual(newList, result);
+    }
+    
   }
 }
