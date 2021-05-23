@@ -36,6 +36,9 @@ namespace PierresBakery.Models
       return _instances[searchId-1];
     }
 
-  
+    public void GetOrder(Order order)
+    {
+      Orders.Add(order);
+    }
   }
 }
