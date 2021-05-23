@@ -1,6 +1,16 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+div#footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  color: #ccc;
+  background: #333;
+  padding: 8px;
+}
+
 body {
   background-image: url("../img/PierresBakery.jpg");
   background-size: cover;
