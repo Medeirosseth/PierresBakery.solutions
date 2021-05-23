@@ -1,0 +1,31 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+  <div class="centered-content">
+    <h2> ADD @Model.VendorName Order</h2>
+    <form action="/vendors/@Model.Id/orders" method="post" class="style-form"
+    <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+    <div>
+      <label for="orderType">Order Type</label>
+      <input id="orderType" name="orderType" type="text" class="form-control" placeholder="Order Type" required>
+    </div>
+    <div>
+      <label for="orderDescription">Order Description</label>
+      <input id="orderDescription" name="orderDescription" type="text" class="form-control" placeholder="Order Description" required>
+    </div>
+    <div>
+      <label for="orderPrice">Order Price</label>
+      <input id="orderPrice" name="orderPrice" type="text" class="form-control" placeholder="Order Price" required>
+    </div>
+      <div>
+      <label for="orderDate">Order Date</label>
+      <input id="orderDate" name="orderDate" type="text" class="form-control" placeholder="Order Date" required>
+    </div>
+    </form>
+  </div>
+</div>
+
+<p><a href="/vendors" role="button">Vendors</a></p>
+<p><a href="/" role="button">Home</a></p>

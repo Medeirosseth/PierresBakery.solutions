@@ -1,3 +1,14 @@
 @{
     Layout = "_Layout";
 }
+
+@using PierresBakery.Models;
+
+<div class="container">
+    <div class="centered-content">
+        <h1>@Model["vendor"].VendorName</h1>
+        <div>
+            <p>@Model["vendor"].Vendor.Description</p>
+        </div>
+    </div>
+</div>
