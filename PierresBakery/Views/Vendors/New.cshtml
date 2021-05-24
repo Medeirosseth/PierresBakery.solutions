@@ -1,13 +1,14 @@
-<h1>Add Vendor</h1>
-<p>Add vendor here:</p>
-
-<form action="/vendors" method="post" class="style-form">
-  <label for="vendorName">Vendor Name</label>
-  <input type="vendorName" name="vendorName" type="text">
-  <label for="description">Description</label>
-  <input type="description" name="description" type="text">
-  <button type="submit">Add Vendor</button>
+<link rel="stylesheet" href="~/css/styles.css">
+<body id="vendorNew">
+<h1 id="vendorTitle">Add Vendor</h1>
+<form action="/vendors" method="post" class="style-form addVendorText">
+  <input type="vendorName" name="vendorName" type="text" placeholder="Vendor Name">
+  <button type="submit" class="btn">Add Vendor</button>
 </form>
 
-<p><a href="/">Home</a></p>
-<p><a href="/vendors">Vendors</a></p>
+<div id="footer" class="link">
+  <a href="/">Home</a>
+  <a href="/vendors">Vendors</a>
+</div>
+
+</body>

@@ -1,1 +1,59 @@
-﻿
+﻿h1 {
+  color: goldenrod;
+}
+
+#indexImg {
+  background-image: url("../img/Croissant.jpg");
+  background-size: cover;
+}
+
+#indexTitle {
+  margin-left: 60%;
+  text-decoration: underline;
+}
+
+.indexText {
+  margin-left: 60%;
+  color: white;
+}
+
+.indexText :hover {
+  color: goldenrod;
+  font-weight: bolder;
+}
+
+#footer {
+  color: goldenrod;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 8px;
+}
+
+#vendorNew {
+  background-image: url("../img/Border.jpg");
+  background-size: cover;
+}
+
+#vendorTitle {
+  text-align: center;
+  color: white;
+  margin-top: 30%;
+  text-decoration: underline;
+}
+
+.addVendorText {
+  text-align: center;
+  color: white;
+  margin-top: 3%;
+}
+
+.link {
+  margin-left: 30%;
+}
+
+.link :hover {
+  font-weight: bolder;
+  color: goldenrod;
+}
