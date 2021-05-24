@@ -1,10 +1,9 @@
 using System.Collections.Generic;
 
-namespace PierresBakery
+namespace PierresBakery.Models
 {
   public class Order
   {
-    private static List<Order> _instances = new List<Order> { };
     
     public string OrderTitle { get; set; }
     public string OrderDescription { get; set; }
@@ -12,7 +11,7 @@ namespace PierresBakery
     public int Orderdate { get; set; }
     public int Id { get; }
     
-
+    private static List<Order> _instances = new List<Order> { };
     public Order(string orderTitle, string orderDescription, int orderPrice, int orderDate)
     {
       OrderTitle = orderTitle;

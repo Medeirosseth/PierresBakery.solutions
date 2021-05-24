@@ -43,7 +43,7 @@ namespace PierresBakery.Controllers
 
     public ActionResult Create(int vendorId, string orderType, string orderDescription, int orderPrice, int orderDate)
     {
-      Dictionary<string, Object> model = new Dictionary<string, object>();
+      Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor vendorObject = Vendor.Find(vendorId);
       Order newOrder = new Order(orderType, orderDescription, orderPrice, orderDate);
       List<Order> vendorOrders = vendorObject.Orders;
