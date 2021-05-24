@@ -1,8 +1,8 @@
-#### Pierres Bakery #2
+#### 🥖 Pierres Bakery #2 🥖
 
 #### By _**:neckbeard:Seth Medeiros**_
 
-## Technologies Used
+## Technologies Used 🖥️
 
 - _C#/.NET 5_
 - _CSS_
@@ -16,7 +16,7 @@ _This is a web application that allows you to place objects within objects_
 <details>
   ## Setup and Use
 
-### Prerequisites
+### Prerequisites 📝
 
 - [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 - A text editor like [VS Code](https://code.visualstudio.com/)
@@ -46,7 +46,7 @@ _This is a web application that allows you to place objects within objects_
 
 - _None known_
 
-## License
+## License 🏫
 
 <details>
   <summary>MIT</summary>
