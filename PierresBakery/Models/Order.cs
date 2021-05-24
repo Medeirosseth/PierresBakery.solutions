@@ -4,13 +4,11 @@ namespace PierresBakery.Models
 {
   public class Order
   {
-    
     public string OrderTitle { get; set; }
     public string OrderDescription { get; set; }
     public int OrderPrice { get; set; }
     public int OrderDate { get; set; }
     public int Id { get; }
-    
     private static List<Order> _instances = new List<Order> { };
     public Order(string orderTitle, string orderDescription, int orderPrice, int orderDate)
     {
@@ -20,9 +18,7 @@ namespace PierresBakery.Models
       OrderDate = orderDate;
       _instances.Add(this);
       Id = _instances.Count;
-
     }
-
     public static void ClearAll()
     {
       _instances.Clear();
@@ -37,7 +33,5 @@ namespace PierresBakery.Models
     {
       return _instances[searchId-1];
     }
-  }
-
-  
+  } 
 }

@@ -16,6 +16,5 @@ namespace PierresBakery.Controllers
       {
         return View();
       }
-
     }
 }

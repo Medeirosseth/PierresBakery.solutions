@@ -4,12 +4,9 @@ using System.Collections.Generic;
 
 namespace PierresBakery.Controllers
 {
-
   public class OrdersController : Controller
   {
-
     [HttpGet("/vendors/{vendorId}/orders/new")]
-
     public ActionResult New(int vendorId)
     {
       Vendor vendor = Vendor.Find(vendorId);
@@ -17,7 +14,6 @@ namespace PierresBakery.Controllers
     }
 
     [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
-
     public ActionResult Show(int vendorId, int orderId)
     {
       Order order = Order.Find(orderId);
