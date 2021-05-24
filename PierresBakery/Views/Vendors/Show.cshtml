@@ -2,9 +2,6 @@
     Layout = "_Layout";
 }
 @using PierresBakery.Models
-
-
-
 <div class="container">
     <div class="centered-content">
         <h1>@Model["vendor"].VendorName</h1>
@@ -17,9 +14,12 @@
             @foreach (Order order in @Model["orders"])
             {
                 <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>Order No. @order.Id</a></li>
+                <p>Order Title: @order.OrderTitle</p>
+                <p>Order Description: @order.OrderDescription</p>
+                <p>Order Price: @order.OrderPrice</p>
+                <p>Order Date: @order.OrderDate</p>
             }
         </ol>
-       
     </div>
     <p><a href="/">Home</a></p>
 </div>

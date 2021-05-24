@@ -8,7 +8,7 @@ namespace PierresBakery.Models
     public string OrderTitle { get; set; }
     public string OrderDescription { get; set; }
     public int OrderPrice { get; set; }
-    public int Orderdate { get; set; }
+    public int OrderDate { get; set; }
     public int Id { get; }
     
     private static List<Order> _instances = new List<Order> { };
@@ -17,7 +17,7 @@ namespace PierresBakery.Models
       OrderTitle = orderTitle;
       OrderDescription = orderDescription;
       OrderPrice = orderPrice;
-      Orderdate = orderDate;
+      OrderDate = orderDate;
       _instances.Add(this);
       Id = _instances.Count;
 
